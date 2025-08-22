@@ -1,6 +1,6 @@
 // Image filenames only (no full path needed)
 const images = [
-  { filename: "1.jpg" },
+  { filename: "14.jpg" },
   { filename: "5.jpg" },
   { filename: "3.jpg" },
   { filename: "9.jpg" },
@@ -23,7 +23,7 @@ const images = [
   { filename: "13.jpg" },
   { filename: "11.jpg" },
   { filename: "21.jpg" },
-  { filename: "14.jpg" },
+  { filename: "1.jpg" },
   { filename: "22.jpg" },
   { filename: "32.jpg" },
   { filename: "23.jpg" },
