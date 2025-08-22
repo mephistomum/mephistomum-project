@@ -101,3 +101,12 @@
     #modalCloseBtn:hover {
       background-color: rgba(0,0,0,0.85);
     }
+
+    
+/* Force 2 columns on small screens (phones) */
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 2;   /* exactly 2 columns */
+    column-width: auto; /* reset so it doesn’t conflict */
+  }
+}
