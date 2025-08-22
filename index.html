@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Fixed Width Gallery with Original Height</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="gallery" id="gallery">
+    <!-- Gallery images inserted via JavaScript -->
+  </main>
+
+  <!-- Modal to show original sized image -->
+  <div id="modalBackdrop" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+    <div id="modalContent" role="document">
+      <button aria-label="Close full size image" id="modalCloseBtn">&times;</button>
+      <img id="modalImage" src="" alt="" />
+    </div>
+  </div>
+
+<script src="image.js"></script>
+</body>
+</html>
+

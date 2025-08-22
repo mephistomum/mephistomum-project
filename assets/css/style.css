@@ -1,0 +1,103 @@
+    /* Container for the entire gallery */
+    body {
+      background-color: #fafafa;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      max-width: 1200px;
+      width: 100%;
+      column-width: 240px; /* Fixed width of each image column */
+      column-gap: 16px;
+    }
+
+    /* Each image wrapper ensures margin below images */
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      cursor: pointer;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.05);
+      background-color: white;
+    }
+    .gallery-item:hover {
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+    }
+
+    .gallery-item img {
+      width: 100%; /* Fixed width */
+      height: auto; /* Maintain original image aspect ratio */
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* Modal backdrop */
+    #modalBackdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    #modalBackdrop.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Modal content with scroll if large image */
+    #modalContent {
+  max-width: 95vw;
+  max-height: 95vh;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  background-color: #000;
+  position: relative;
+  overflow: hidden; /* <-- changed */
+    }
+
+    #modalContent img {
+       display: block;
+  max-width: 95vw;  /* prevent horizontal scroll */
+  max-height: 95vh; /* prevent vertical scroll */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* keeps the aspect ratio */
+    }
+
+    /* Close button on top-right corner */
+    #modalCloseBtn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: rgba(0,0,0,0.6);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      font-size: 24px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      line-height: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #modalCloseBtn:hover {
+      background-color: rgba(0,0,0,0.85);
+    }
