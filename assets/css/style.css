@@ -108,5 +108,10 @@
   .gallery {
     column-count: 2;   /* exactly 2 columns */
     column-width: auto; /* reset so it doesn’t conflict */
+    column-gap: 8px;
+  }
+
+    .gallery-item {
+    margin-bottom: 8px;  /* smaller gap between rows */
   }
 }
