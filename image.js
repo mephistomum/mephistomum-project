@@ -1,5 +1,6 @@
 // Image filenames only (no full path needed)
 const images = [
+  { filename: "35.jpg" },
   { filename: "34.jpg" },
   { filename: "33.jpg" },
   { filename: "14.jpg" },
