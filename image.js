@@ -1,9 +1,8 @@
-// Image filenames only (no full path needed)
 const images = [
-  { filename: "36.jpg" },
-  { filename: "35.jpg" },
+  { filename: "36.jpg",link: "https://x.com/miwaluvsy/status/1959997554760056999" },
+  { filename: "35.jpg",link: "https://x.com/DearLoveLily/status/1959628604477972592" },
   { filename: "34.jpg" },
-  { filename: "33.jpg" },
+  { filename: "33.jpg",link: "https://x.com/sylustale/status/1959323344807051349" },
   { filename: "14.jpg" },
   { filename: "5.jpg" },
   { filename: "3.jpg" },
@@ -26,6 +25,7 @@ const images = [
   { filename: "28.jpg" },
   { filename: "13.jpg" },
   { filename: "11.jpg" },
+  { filename: "37.jpg",link: "https://x.com/miwaluvsy/status/1949062997680529709" },
   { filename: "21.jpg" },
   { filename: "1.jpg" },
   { filename: "22.jpg" },
@@ -38,6 +38,7 @@ const images = [
 ];
 
 const gallery = document.getElementById("gallery");
+const modalLinkBtn = document.getElementById("modalLinkBtn");
 
 // Base URL for GitHub Pages
 const baseURL = "https://mephistomum.github.io/mephistomum-project/assets/images/";
@@ -64,8 +65,20 @@ const modalCloseBtn = document.getElementById("modalCloseBtn");
 // Open modal on image click
 gallery.addEventListener("click", e => {
   if (e.target.tagName === "IMG") {
+    const clickedFile = e.target.alt; // same as filename
+    const clickedImage = images.find(img => img.filename === clickedFile);
+
     modalImage.src = e.target.src;
     modalImage.alt = e.target.alt;
+
+    // ✅ Update button link
+    if (clickedImage && clickedImage.link) {
+      modalLinkBtn.href = clickedImage.link;
+      modalLinkBtn.style.display = "inline-block"; 
+    } else {
+      modalLinkBtn.style.display = "none"; // hide if no link
+    }
+
     modalBackdrop.classList.add("show");
     modalBackdrop.focus();
   }
