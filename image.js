@@ -52,7 +52,7 @@ images.forEach(({ filename }) => {
 
   const img = document.createElement("img");
   img.src = `${baseURL}${filename}`;
-  img.alt = filename; // or you can make a prettier alt
+  img.alt = filename; 
   img.loading = "lazy";
 
   div.appendChild(img);
@@ -73,7 +73,7 @@ gallery.addEventListener("click", e => {
     modalImage.src = e.target.src;
     modalImage.alt = e.target.alt;
 
-    // ✅ Update button link
+    // Update button link
     if (clickedImage && clickedImage.link) {
       modalLinkBtn.href = clickedImage.link;
       modalLinkBtn.style.display = "inline-block"; 
