@@ -2,7 +2,7 @@ const images = [
   { filename: "92.jpg",link: "https://x.com/mephistomum/status/1968665203874156806" },
   { filename: "91.jpg",link: "https://x.com/xiamerqi/status/1971941058411221429" },
   { filename: "90.jpg",link: "https://x.com/xiamerqi/status/1971922492227985463" },
-  { filename: "89.jpg"},
+  { filename: "89.jpg",link: "https://x.com/miwaluvsy/status/1964279030406132066"},
   { filename: "88.jpg"},
   { filename: "87.jpg" ,link: "https://x.com/mephistomum/status/1968920828361232729"},
   { filename: "86.jpg"},
