@@ -1,4 +1,18 @@
 const images = [
+  { filename: "109.jpg",link: "https://x.com/mephistomum/status/1975165643470082383" },
+  { filename: "108.jpg",link: "https://x.com/mephistomum/status/1976448335180714134" },
+{ filename: "107.jpg",link: "https://x.com/taeohbeng/status/1976583851335151631" },
+{ filename: "106.jpg",link: "https://x.com/miwaluvsy/status/1976646570037936254" },
+  { filename: "105.jpg",link: "https://x.com/mephistomum/status/1974671736412262841" },
+  { filename: "104.jpg",link: "https://x.com/mephistomum/status/1975112151837946340" },
+  { filename: "103.jpg",link: "https://x.com/mephistomum/status/1976506678179983732" },
+  { filename: "102.jpg",link: "https://x.com/mephistomum/status/1974372654242246915" },
+  { filename: "101.jpg",link: "https://x.com/mephistomum/status/1974767178898702448"},
+  { filename: "100.jpg",link: "https://x.com/mephistomum/status/1974423118824501263"},
+  { filename: "99.jpg" ,link: "https://x.com/mephistomum/status/1974654839021052121"},
+  { filename: "98.jpg",link: "https://x.com/mephistomum/status/1976295811152740715" },
+
+
 { filename: "95.jpg",link: "https://x.com/mephistomum/status/1974265914100232420" },
 { filename: "94.jpg",link: "https://x.com/taeohbeng/status/1974161716696199223" },
   { filename: "93.jpg",link: "https://x.com/mephistomum/status/1973925885645631960" },
