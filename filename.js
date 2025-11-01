@@ -1,4 +1,11 @@
 const images = [
+    { filename: "110.jpg",link: "https://x.com/mephistomum/status/1983577041598595427" },
+  { filename: "111.jpg",link: "https://x.com/acahthzzn/status/1983881853787570424" },
+    { filename: "112.jpg",link: "https://x.com/mephistomum/status/1984370601444983269" },
+  { filename: "113.jpg",link: "https://x.com/mephistomum/status/1983470407262109820" },
+    { filename: "114.jpg",link: "https://x.com/acahthzzn/status/1978076033451487534" },
+  { filename: "115.jpg",link: "https://x.com/miwaluvsy/status/1981669504179679401" },
+    { filename: "116.jpg",link: "https://x.com/mephistomum/status/1978920588157816969" },
   { filename: "109.jpg",link: "https://x.com/mephistomum/status/1975165643470082383" },
   { filename: "108.jpg",link: "https://x.com/mephistomum/status/1976448335180714134" },
 { filename: "107.jpg",link: "https://x.com/taeohbeng/status/1976583851335151631" },
